@@ -1,4 +1,4 @@
-This repo contains a `Dockerfile` from which you can build a container running VSCode-Server. For detailed instruction, refer to [here]()
+This repo contains a `Dockerfile` from which you can build a container running VSCode-Server. For detailed instruction, refer to [here](https://medium.com/@techhara/setup-vscode-server-develop-from-any-device-1b55470c05ee)
 
 # Server
 
@@ -37,8 +37,13 @@ docker logs CONTAINER_ID
 ```
 
 # Client
-## Web browser
+## Connect to tunnel
+
+### Web browser
 Visit [vscode.dev](https://vscode.dev) and select `Connect to Tunnels`, authenticate, and select the instance. 
 
-## VSCode app
+### VSCode app
 Install [remote-tunnels](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-server) extension. Connect to the server from `Remote Explorer` tab on the left.
+
+## Develop
+Dev container system's user name is `dev` and sudo password is `docker`.
